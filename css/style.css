@@ -1,0 +1,622 @@
+:root {
+  --cor-principal: #f58220;
+  --cor-secundaria: #2d3047;
+  --cor-textos: #333;
+}
+
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+a,
+p {
+  text-decoration: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.page-title {
+  padding-top: 60px;
+}
+
+.btn-primary {
+  background: var(--cor-principal) !important;
+  border-color: var(--cor-principal) !important;
+  transition: 0.3s !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.header-top {
+  padding: 20px 0;
+}
+
+.contato-top-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contato-top {
+  display: flex;
+  align-items: center;
+}
+
+.contato-top i {
+  font-size: 1.4rem;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 50%;
+  color: var(--cor-principal);
+  background: white;
+  box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contato-top-info {
+  padding-left: 10px;
+  line-height: 1.2rem;
+}
+
+.contato-top-info p {
+  color: var(--cor-textos);
+}
+
+.contato-top-info p:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding-right: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: var(--cor-textos) !important;
+}
+
+.header-bottom {
+  background: #eee;
+}
+
+/*FOOTER*/
+
+#footer {
+  background: var(--cor-secundaria);
+  padding: 100px 0;
+  color: white;
+}
+
+#footer p {
+  text-align: justify;
+}
+
+.widget-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+}
+
+.footer-nav li {
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+}
+
+.footer-nav a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  background: #202233;
+  padding: 10px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.contato-info p {
+  padding-top: 20px !important;
+}
+
+.contato-info i {
+  font-size: 1.2rem;
+  padding-right: 5px;
+}
+
+.social-links a {
+  color: white;
+  padding-right: 15px !important;
+}
+
+.social-links i {
+  font-size: 1.8rem;
+}
+
+#header-mobile {
+  display: none;
+}
+
+.btn-mobile-menu i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--cor-principal);
+  background: white;
+  box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.show-menu {
+  display: block !important;
+  animation: show-mobile-menu 0.5s forwards;
+}
+
+.hide-menu {
+  display: block !important;
+  animation: hide-mobile-menu 0.5s forwards;
+  pointer-events: none;
+}
+
+@keyframes show-mobile-menu {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@keyframes hide-mobile-menu {
+  to {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+
+/*CALL TO ACTION*/
+.call-to-action {
+  background: url(../img/cta.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.cta-title {
+  font-size: 5rem;
+  color: var(--cor-principal);
+  font-weight: 400;
+  line-height: 5rem;
+  margin-bottom: 20px;
+}
+
+/*SLIDER*/
+#mainSlider i {
+  font-size: 2rem;
+  padding: 5px;
+  background: var(--cor-principal);
+}
+
+#mainSlider .carousel-control-next,
+#mainSlider .carousel-control-prev {
+  opacity: 1;
+}
+
+.slide-title {
+  background: var(--cor-principal);
+  padding: 15px;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  color: white;
+}
+
+.slide-title h2 {
+  margin: 0;
+}
+
+/*FORMULÁRIO DE PESQUISA*/
+#pesquisar-imovel {
+  padding: 20px 0;
+}
+#pesquisar-imovel form {
+  background: white;
+  box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+#pesquisar-imovel form .row:first-child {
+  padding: 40px;
+}
+
+.form-title {
+  background: var(--cor-principal);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+  width: 20%;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  text-transform: uppercase;
+}
+
+/*IMÓVEIS*/
+#imoveis {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.section-title-content {
+  padding: 0 40px;
+}
+
+.section-title-line {
+  height: 3px;
+  background: var(--cor-principal);
+  width: 100%;
+}
+
+.section-title h3 {
+  color: var(--cor-secundaria);
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+
+.section-title p {
+  color: var(--cor-principal);
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+
+/*LISTA DE IMÓVEIS*/
+.imovel-title {
+  font-size: 1.6rem;
+  color: var(--cor-secundaria);
+  line-height: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.imovel-local {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.imovel-atrib {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.imovel-atrib .atrib:nth-child(even) {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  padding: 0 20px;
+}
+
+.atrib {
+  text-align: center;
+}
+
+.atrib span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--cor-principal);
+}
+
+.atrib p {
+  font-size: 1rem;
+  color: var(--cor-textos);
+}
+
+.imovel-btn {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.imovel-btn span {
+  font-size: 2rem;
+  color: white;
+  background: #ccc;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.imovel-btn p {
+  width: 50%;
+  display: flex;
+  line-height: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/*BLOG*/
+#blog {
+  background: url(../img/blog-section-bg.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 150px 0;
+}
+
+#blog .section-title-line {
+  background: white;
+}
+
+#blog .section-title h3,
+#blog .section-title p {
+  color: white;
+}
+
+.blog-resumo {
+  text-align: justify;
+  margin: 40px 0 !important;
+  color: var(--cor-textos);
+}
+
+#blog .imovel-title {
+  color: var(--cor-principal);
+}
+
+#blog .card {
+  padding: 15px;
+  margin: 2px;
+}
+
+/*BAIRROS*/
+#bairros {
+  padding: 100px 0;
+}
+.bairro-title {
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.bairro-title:hover {
+  opacity: 0.9;
+}
+
+/*PÁGINA SOBRE*/
+#sobre {
+  padding: 100px 0;
+}
+
+.title,
+.subtitle {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 3rem;
+  color: var(--cor-secundaria);
+}
+
+.subtitle {
+  font-weight: bold;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: var(--cor-textos);
+  margin: 20px 0 !important;
+  text-align: justify;
+}
+
+#valores {
+  padding: 60px 0 100px 0;
+}
+
+#valores i {
+  color: var(--cor-principal);
+}
+
+/*PÁGINA DE CONTATO*/
+#contato {
+  padding: 60px 0;
+}
+
+.mensagem-recebida {
+  text-align: center;
+  padding: 20px;
+  background: #a0ca92;
+  color: white;
+  margin-top: 20px;
+  display: none;
+}
+
+.mensagem-erro {
+  text-align: center;
+  padding: 20px;
+  background: #e55934;
+  color: white;
+  margin-top: 20px;
+  display: none;
+}
+
+.alerta {
+  display: block;
+  animation: showMessage 0.5s forwards;
+}
+
+@keyframes showMessage {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+.mensagem-recebida h6 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.mensagem-recebida i {
+  padding-right: 10px;
+}
+
+/*BREADCRUMBS*/
+.breadcrumb {
+  background: var(--cor-secundaria);
+  padding: 20px 0 !important;
+  margin-bottom: 0 !important;
+}
+.breadcrumb-title {
+  color: white;
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.breadcrumbs-link {
+  color: var(--cor-principal);
+  text-transform: uppercase;
+}
+
+.breadcrumbs-text {
+  color: white;
+  text-transform: uppercase;
+}
+
+.breadcrumb span {
+  padding: 0 10px;
+}
+
+/*IMÓVEL DETALHES*/
+.imovel {
+  padding: 60px 0;
+}
+
+.imovel .atrib:nth-child(even) {
+  border: none;
+}
+
+/*---------------------------------MEDIA QUERIES---------------------------------*/
+@media (max-width: 40rem) {
+  #header-desktop {
+    display: none;
+  }
+
+  #header-mobile {
+    display: block;
+    padding: 20px 0;
+    background: #eee;
+  }
+
+  #header-mobile .navbar {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    background: white;
+    padding: 15px;
+    top: 120px;
+    left: 0;
+  }
+
+  .nav-item {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--cor-principal);
+  }
+  .widget-title {
+    margin-top: 40px;
+  }
+
+  .cta-title {
+    font-size: 4rem;
+    color: var(--cor-principal);
+    font-weight: 400;
+    line-height: 4rem;
+  }
+
+  .section-title {
+    flex-direction: column;
+  }
+
+  .section-title-line {
+    display: none;
+  }
+
+  .form-title {
+    width: 100%;
+  }
+
+  .im-ref .col-md-10,
+  .im-ref .col-md-2 {
+    padding: 0px !important;
+  }
+
+  #pesquisar-imovel form .row:first-child {
+    padding: 10px;
+  }
+
+  .slide-title h2 {
+    font-size: 1rem !important;
+  }
+
+  .imovel-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imovel-btn p {
+    width: 100%;
+    padding: 10px !important;
+  }
+
+  #imoveis {
+    padding: 60px 0;
+  }
+
+  .lista-imoveis {
+    padding: 0;
+  }
+
+  .breadcrumb {
+    display: none !important;
+  }
+}
